@@ -1,6 +1,21 @@
 $(document).ready(function(){
   console.log(citations.length);
   
+  $("#numberField").attr("max", citations.length-1);
+  
+  $("#fortune_form").on("submit", function(event){
+    event.preventDefault();
+  });
+  
+  $("#numberField").on("change",function(){
+    var nombre = $(this).val();
+    
+    $("#fortune_cookie").empty();
+    $("#fortune_cookie").append("<p>"+citations[nombre]['citation']+"</p>");
+    $("#fortune_cookie").append("<span>"+citations[nombre]['auteur']+"</span>");
+  });
+  
+  
   $("#fortune_button").on("click", function(event){
     event.preventDefault();
     var nombre=getTirage(citations.length);
