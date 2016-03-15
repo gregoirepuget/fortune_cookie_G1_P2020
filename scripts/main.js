@@ -7,7 +7,16 @@ $(document).ready(function(){
     event.preventDefault();
   });
   
-  $("#numberField").on("change",function(){
+  var listOptions='';
+  for(var i=0; i < citations.length; i++)
+  {
+    listOptions += '<option value="'+i+'">'+citations[i]["auteur"]+'</option>';
+  }
+  console.log(listOptions);
+  $("#authorField").html(listOptions);
+  
+  
+  $("#numberField, #authorField").on("change",function(){
     var nombre = $(this).val();
     
     $("#fortune_cookie").empty();
