@@ -1,0 +1,34 @@
+body{
+background:url("../images/fortune-cookie-vector-illustrations.jpg") no-repeat #ffd778 center top;
+margin:0;
+color:#FFFFFF;
+font-family: Arial, sans-serif;
+  text-align:center;
+}
+
+
+#fortune_button{
+margin-top:200px;
+  display: inline-block;
+  padding:10px 20px;
+  background:#a12812;
+  font-size:20px;
+  text-decoration: none;
+  color:#FFFFFF;
+}
+
+#fortune_cookie{
+   margin:160px auto 0px auto;
+    width:500px;
+}
+
+#fortune_cookie p{
+    background-color: #FFFFFF;
+    color:black;
+    padding:5px;
+    margin-bottom:0px;
+}
+#fortune_cookie span{
+  float:right;
+  color:#a12812;
+}
