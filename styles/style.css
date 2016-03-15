@@ -41,9 +41,68 @@ body{
 }
 
 #fortune_form label{
-display:block;
+  display:block;
 }
 
 #fortune_form input{
-padding:5px;
+  padding:5px;
 }
+
+
+#nom{
+  position:fixed;
+  left:0;
+  top:0;
+  background: #FFFFFF;
+}
+
+#nomContent
+{
+  position:relative;
+}
+
+#nomContent p{
+  margin:0;
+  padding: 10px 20px;
+  color:#a12812;
+}
+
+#nomContent span{
+  position:absolute;
+  color:red;
+  font-size:9px;
+  top:3px;
+  right:3px;
+  cursor:pointer;
+}
+
+
+#menuContent{
+  position:fixed;
+  top:0;
+  right:-300px;
+  background: #FFFFFF;
+  width:300px;
+  height:100%;
+  transition:all 0.5s linear;
+}
+#menuContent h2{
+  color:#a12812;
+}
+
+#menuContent.open{
+  right:0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

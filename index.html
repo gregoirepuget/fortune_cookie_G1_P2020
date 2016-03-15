@@ -3,38 +3,63 @@
   <head>
     <meta charset="utf-8" />
     <title>Titre de la page</title>
+    <link rel="stylesheet" href="styles/hamburgers.min.css" />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-  <!-- http://www.csvjson.com/csv2json -->
-    
+    <!-- http://www.csvjson.com/csv2json -->
+
     <h1>Fortune Cookie</h1>
-    
-    <a href="#" title="Open a fortune cookie" id="fortune_button">Open a fortune cookie</a>
-    
-    <div id="fortune_cookie">
-      
-      
+
+    <div id="menu">
+      <button class="hamburger hamburger--collapse" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+
     </div>
     
+    <div id="menuContent">
+      <h2>Votre historique</h2>
+      <ul>
+        <li></li>
+      </ul>
+    </div>
+
+    <div id="nom">
+      <div id="nomContent">
+        <p contenteditable="true">Votre nom</p>
+        <span>x</span>
+      </div>
+    </div>
+
+
+    <a href="#" title="Open a fortune cookie" id="fortune_button">Open a fortune cookie</a>
+
+    <div id="fortune_cookie">
+
+
+    </div>
+
     <form action="page2.php" method="post" id="fortune_form">
       <label for="numberField">Choose a number</label>
       <input type="number" name="numberField" id="numberField">
       <label for="authorField">or choose an author</label>
       <select name="authorField" id="authorField">
-        
-        
+
+
       </select>
     </form>
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
     <script src="scripts/jquery-2.2.1.min.js"></script>   
     <script src="scripts/data.json"></script>
     <script src="scripts/main.js"></script>
